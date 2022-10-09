@@ -54,7 +54,7 @@ ROOT_URLCONF = 'pagina_comedor.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/Toshiba/Downloads/escuela/semestre 2022-2/modelamiento/comedor/comedoruacm/pagina_comedor/pagina_comedor/plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
