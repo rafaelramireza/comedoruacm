@@ -16,8 +16,26 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from pagina_comedor.views import saludo
+from pagina_comedor.views import menu
+from pagina_comedor.views import horarios
+from pagina_comedor.views import login
+from pagina_comedor.views import trabajador
+from pagina_comedor.views import gestor
+from pagina_comedor.views import gestor_menu
+from pagina_comedor.views import gestor_horarios
+from pagina_comedor.views import gestor_platillo
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', saludo),
+    path('comedor/', saludo),
+    path('menu/', menu),
+    path("horarios",horarios),
+    path('trabajador/',trabajador),
+    path('login/',login),
+    path('gestor/',gestor),
+    path('gestor_menu/',gestor_menu),
+    path('gestor_horario',gestor_horarios),
+    path('gestor_platillo/',gestor_platillo),
 ]
