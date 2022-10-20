@@ -25,17 +25,15 @@ from pagina_comedor.views import gestor_menu
 from pagina_comedor.views import gestor_horarios
 from pagina_comedor.views import gestor_platillo
 
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('comedor/', saludo),
-    path('menu/', menu),
-    path("horarios",horarios),
-    path('trabajador/',trabajador),
-    path('login/',login),
-    path('gestor/',gestor),
-    path('gestor_menu/',gestor_menu),
-    path('gestor_horario',gestor_horarios),
-    path('gestor_platillo/',gestor_platillo),
+    path('comedor/', saludo, name="comedor"),
+    path('menu/', menu, name="menu"),
+    path("horarios/",horarios, name="horarios"),
+    path('trabajador/',trabajador, name="trabajador"),
+    path('login/',login, name="login"),
+    path('gestor/',gestor,name="gestor"),
+    path('gestor_menu/',gestor_menu, name="gestor_menu"),
+    path('gestor_horario/',gestor_horarios,name="gestor_horario"),
+    path('gestor_platillo/',gestor_platillo,name="gesttor_platillo"),
 ]
